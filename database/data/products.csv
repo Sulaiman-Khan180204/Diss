@@ -1,0 +1,101 @@
+name,slug,form,description,image_url
+Vit D3,vit-d3,tablet,Supports immune and bone health.,/images/products/vit-d3.png
+Vit C,vit-c,tablet,Antioxidant vitamin for immunity and skin.,/images/products/vit-c.png
+Vit B Complex,vit-b-complex,capsule,B‑vitamins for energy and metabolism.,/images/products/vit-b-complex.png
+Vit B12,vit-b12,tablet,B12 for energy and red blood cell support.,/images/products/vit-b12.png
+Folic Acid,folic-acid,tablet,Folate for cell division and pregnancy support.,/images/products/folic-acid.png
+Vit A,vit-a,softgel,Vision and immune support.,/images/products/vit-a.png
+Vit E,vit-e,softgel,Antioxidant protection.,/images/products/vit-e.png
+Vit K,vit-k,tablet,Vitamin K for normal blood clotting.,/images/products/vit-k.png
+Biotin,biotin,tablet,Hair and nail support.,/images/products/biotin.png
+Niacin,niacin,tablet,Vitamin B3 for energy and cholesterol balance.,/images/products/niacin.png
+Vit B5,vit-b5,tablet,Pantothenic acid for energy metabolism.,/images/products/vit-b5.png
+Riboflavin (B2),riboflavin-b2,tablet,Vitamin B2 for energy release.,/images/products/riboflavin-b2.png
+Thiamine (B1),thiamine-b1,tablet,Vitamin B1 for heart and nervous system.,/images/products/thiamine-b1.png
+Vit C + Zinc Combos,vit-c-zinc-combo,tablet,Combined immune support.,/images/products/vit-c-zinc-combo.png
+Multivitamins,multivitamins,tablet,Daily broad‑spectrum vitamins and minerals.,/images/products/multivitamins.png
+Vit K2,vit-k2,softgel,Supports bone and cardiovascular health.,/images/products/vit-k2.png
+
+Magnesium Tablets,magnesium-tablets,tablet,General magnesium support.,/images/products/magnesium-tablets.png
+Magnesium Glycinate,magnesium-glycinate,tablet,Highly absorbed magnesium for relaxation.,/images/products/magnesium-glycinate.png
+Magnesium Citrate,magnesium-citrate,tablet,Magnesium for muscle and nerve function.,/images/products/magnesium-citrate.png
+Iron Supplements,iron-supplements,tablet,Iron for haemoglobin and energy.,/images/products/iron.png
+Zinc Supplements,zinc-supplements,tablet,Zinc for immunity and skin.,/images/products/zinc.png
+Calcium Supplements,calcium-supplements,tablet,Calcium for bones and teeth.,/images/products/calcium.png
+Selenium,selenium,tablet,Antioxidant trace element.,/images/products/selenium.png
+Potassium Supplements,potassium-supplements,tablet,Potassium for muscle/nerve and blood pressure.,/images/products/potassium.png
+Copper,copper,tablet,Trace element for energy enzymes.,/images/products/copper.png
+Chromium,chromium,tablet,Helps maintain normal blood glucose.,/images/products/chromium.png
+Iodine,iodine,tablet,Thyroid hormone production support.,/images/products/iodine.png
+Boron,boron,tablet,Trace element for bone metabolism.,/images/products/boron.png
+Manganese,manganese,tablet,Trace element for connective tissue.,/images/products/manganese.png
+Electrolyte Tablets,electrolyte-tablets,tablet,Electrolyte balance for hydration.,/images/products/electrolyte-tablets.png
+
+Ashwagandha,ashwagandha,capsule,Adaptogen for stress and balance.,/images/products/ashwagandha.png
+Gingko Biloba,gingko-biloba,capsule,Herbal support for memory and circulation.,/images/products/gingko.png
+St Johns Wort,st-johns-wort,capsule,Traditional herb for mood support.,/images/products/st-johns-wort.png
+CBD Oil,cbd-oil,oil,Hemp extract for calm and balance.,/images/products/cbd-oil.png
+L-Theanine,l-theanine,capsule,Amino acid for relaxation and focus.,/images/products/l-theanine.png
+Lion's Mane Mushroom,lions-mane-mushroom,capsule,Functional mushroom for cognition.,/images/products/lions-mane.png
+
+Omega-3 Fish Oil,omega-3-fish-oil,softgel,Marine omega‑3 for heart and brain.,/images/products/omega3.png
+Triple Omega 3,6,9,triple-omega-3-6-9,softgel,Blend of omega 3/6/9 fatty acids.,/images/products/omega-3-6-9.png
+Coenzyme Q10,coenzyme-q10,softgel,CoQ10 for heart energy.,/images/products/coq10.png
+Garlic Supplements,garlic-supplements,tablet,Garlic for heart and immunity.,/images/products/garlic.png
+Krill Oil,krill-oil,softgel,Phospholipid omega‑3 source.,/images/products/krill.png
+Resveratrol,resveratrol,capsule,Polyphenol antioxidant.,/images/products/resveratrol.png
+Algae Based Omega 3,algae-omega-3,softgel,Plant‑based DHA/EPA.,/images/products/algae-omega3.png
+Beetroot Capsules,beetroot-capsules,capsule,Nitrate source for circulation and stamina.,/images/products/beetroot.png
+Hawthorn Berry,hawthorn-berry,capsule,Traditional heart and circulation herb.,/images/products/hawthorn.png
+
+Whey Protein Powder,whey-protein-powder,powder,Protein for muscle building and recovery.,/images/products/whey.png
+Plant Based Protein,plant-based-protein,powder,Pea/rice blends for protein.,/images/products/plant-protein.png
+Creatine,creatine,powder,Creatine monohydrate for power.,/images/products/creatine.png
+BCAA Supplements,bcaa-supplements,powder,Leucine/Isoleucine/Valine for muscle.,/images/products/bcaa.png
+Electrolytes,electrolytes,powder,Hydration and cramps support.,/images/products/electrolytes.png
+Pre-workout blends,pre-workout-blends,powder,Energy/focus blends before training.,/images/products/preworkout.png
+Amino Acid,amino-acid,powder,Essential amino acids blend.,/images/products/amino.png
+Collagen Blends,collagen-blends,powder,Collagen peptides types I/III.,/images/products/collagen-blends.png
+Meal Replacement Shakes,meal-replacement-shakes,powder,Balanced macros with vitamins/minerals.,/images/products/mrs.png
+Beta-Alanine,beta-alanine,powder,Beta‑alanine for endurance.,/images/products/beta-alanine.png
+
+Probiotics + Prebiotics,probiotics-prebiotics,capsule,Live cultures with prebiotic fiber.,/images/products/probiotics.png
+Digestive Enzyme Supplements,digestive-enzymes,capsule,Enzymes to digest carbs/fats/proteins.,/images/products/enzymes.png
+Apple Cider Vinegar,apple-cider-vinegar,tablet,ACV extract for digestion.,/images/products/acv.png
+L-Glutamine,l-glutamine,powder,Amino acid for gut lining.,/images/products/l-glutamine.png
+Aloe Vera Capsules,aloe-vera-capsules,capsule,Soothing aloe for digestion.,/images/products/aloe.png
+Slippery Elm,slippery-elm,capsule,Demulcent bark for digestive comfort.,/images/products/slippery-elm.png
+
+Marine Collagen,marine-collagen,powder,Type I collagen for skin.,/images/products/marine-collagen.png
+Hyaluronic Acid Supps,hyaluronic-acid-supps,tablet,Skin hydration support.,/images/products/hyaluronic.png
+Skin Hair and Nails,skin-hair-and-nails,tablet,Beauty blend with biotin, zinc, C.,/images/products/shn.png
+Primrose Oil,primrose-oil,softgel,GLA source for skin/hormonal balance.,/images/products/primrose.png
+Silica,silica,tablet,Silica for hair/nails/connective tissue.,/images/products/silica.png
+
+Glucosamine + Chondroitin,glucosamine-chondroitin,capsule,Joint cartilage combo.,/images/products/gluc-chon.png
+MSM,msm,tablet,Sulfur compound for joint comfort.,/images/products/msm.png
+Calcium + Vit D + Magnesium Combos,calcium-d-mag-combo,tablet,3‑in‑1 bone support.,/images/products/cdm.png
+Turmeric,turmeric,capsule,Curcumin for inflammation balance.,/images/products/turmeric.png
+Boswellia Cream,boswellia-cream,cream,Topical Boswellia for joints.,/images/products/boswellia-cream.png
+Collagen 2 Joint Support,collagen-ii-joint-support,capsule,Type II collagen for joints.,/images/products/collagen-ii.png
+Devil's Claw,devils-claw,capsule,Traditional herb for joint comfort.,/images/products/devils-claw.png
+
+Children’s Multivitamin Gummies,childrens-multivitamin-gummies,gummy,Daily vitamins for kids.,/images/products/kids-gummies.png
+Baby Liquid Multivitamin Drops,baby-multivitamin-drops,drops,Infant multi drops.,/images/products/baby-drops.png
+Vitamin D3 Drops,vitamin-d3-drops,drops,Bone & immune support for kids.,/images/products/d3-drops.png
+Elderberry Syrup,elderberry-syrup,syrup,Traditional immune support for kids.,/images/products/elderberry.png
+Choline,choline,tablet,Choline for brain development.,/images/products/choline.png
+
+Evening Primrose Oil,evening-primrose-oil,softgel,GLA for PMS and skin.,/images/products/epo.png
+DIM,dim,capsule,Diindolylmethane for estrogen balance.,/images/products/dim.png
+Maca Root,maca-root,capsule,Adaptogenic root for vitality.,/images/products/maca.png
+Menopause Support Blends,menopause-support-blends,capsule,Herbal/iso‑flavone blends for menopause.,/images/products/menopause.png
+Prenatal Vitamins,prenatal-vitamins,tablet,Pre‑conception and pregnancy support.,/images/products/prenatal.png
+Myo-Inositol,myo-inositol,powder,Inositol for ovarian function.,/images/products/myo-inositol.png
+
+Saw Palmetto,saw-palmetto,capsule,Prostate support.,/images/products/saw-palmetto.png
+Tribulus,tribulus,capsule,Traditional vitality herb.,/images/products/tribulus.png
+Zinc + Magnesium (ZMA),zma,capsule,Zinc, magnesium, B6 for recovery.,/images/products/zma.png
+Testosterone Support Blends,testosterone-support-blends,capsule,Multi‑ingredient male support.,/images/products/testosterone.png
+Shilajit,shilajit,resin,Traditional mineral pitch for vitality.,/images/products/shilajit.png
+Fenugreek,fenugreek,capsule,Traditional herb used for male health.,/images/products/fenugreek.png

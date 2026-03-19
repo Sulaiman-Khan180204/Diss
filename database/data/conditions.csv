@@ -1,0 +1,69 @@
+need_group_slug,name,slug
+
+essential-vits,Immune Support,immune-support
+essential-vits,Bone Health,bone-health
+essential-vits,Energy & Metabolism,energy-metabolism
+essential-vits,General Wellness,general-wellness
+essential-vits,Deficiency Support,deficiency-support
+
+minerals-trace-elements,Bone & Teeth,bone-teeth
+minerals-trace-elements,Muscle & Nerve Function,muscle-nerve-function
+minerals-trace-elements,Iron Levels,iron-levels
+minerals-trace-elements,Thyroid Support,thyroid-support
+minerals-trace-elements,Antioxidant Protection,antioxidant-protection
+minerals-trace-elements,Electrolyte Balance,electrolyte-balance
+minerals-trace-elements,Blood Sugar Support,blood-sugar-support
+
+brain-mood,Stress & Adaptogen Support,stress-support
+brain-mood,Mood Balance,mood-balance
+brain-mood,Cognitive Function & Memory,cognitive-function
+brain-mood,Sleep & Relaxation,sleep-relaxation
+brain-mood,Neuroprotection,neuroprotection
+
+heart-circulation,Heart Health,heart-health
+heart-circulation,Cholesterol Balance,cholesterol-balance
+heart-circulation,Blood Pressure Support,blood-pressure-support
+heart-circulation,Healthy Circulation,circulation
+heart-circulation,Triglyceride Management,triglyceride-management
+
+sports-nutrition,Muscle Building,muscle-building
+sports-nutrition,Strength & Power,strength-power
+sports-nutrition,Endurance & Hydration,endurance-hydration
+sports-nutrition,Recovery,recovery
+sports-nutrition,Pre‑Workout Energy & Focus,preworkout-energy
+sports-nutrition,Joint Support,joint-support
+
+gut-digestive,Gut Flora Balance,gut-flora-balance
+gut-digestive,Digestive Comfort,digestive-comfort
+gut-digestive,Enzyme Support,enzyme-support
+gut-digestive,Acid Balance,acid-balance
+gut-digestive,Gut Lining Support,gut-lining-support
+
+skin-hair-nails,Collagen Production,collagen-production
+skin-hair-nails,Skin Hydration,skin-hydration
+skin-hair-nails,Hair Growth,hair-growth
+skin-hair-nails,Nail Strength,nail-strength
+skin-hair-nails,Anti‑Ageing Skin,anti-ageing-skin
+
+bone-joint-mobility,Joint Pain & Stiffness,joint-pain
+bone-joint-mobility,Mobility Support,mobility-support
+bone-joint-mobility,Inflammation Modulation,inflammation-support
+bone-joint-mobility,Bone Density,bone-density
+bone-joint-mobility,Connective Tissue Support,connective-tissue-support
+
+children-infants,Kids Daily Nutrition,kids-daily-nutrition
+children-infants,Bone & Teeth Development,bone-teeth-development
+children-infants,Immunity for Kids,kids-immunity
+children-infants,Brain Development,brain-development
+children-infants,Cold & Flu Support,cold-flu-support
+
+womens,Hormonal Balance,hormonal-balance
+womens,Menopause Support,menopause-support
+womens,Prenatal & Pregnancy,prenatal-pregnancy
+womens,Fertility & PCOS Support,fertility-pcos
+womens,Skin/Hair Balance,womens-skin-hair
+
+mens,Prostate Health,prostate-health
+mens,Testosterone Support,testosterone-support
+mens,Strength & Recovery,mens-strength-recovery
+mens,Vitality & Energy,mens-vitality-energy
