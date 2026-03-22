@@ -10,7 +10,7 @@ class CatalogSeeder extends Seeder
 {
     public function run(): void
     {
-        $dir = database_path('seeders/data');
+        $dir = database_path('data');
 
         // 1) Need Groups
         foreach ($this->csv("$dir/need_groups.csv") as $row) {
@@ -94,10 +94,12 @@ class CatalogSeeder extends Seeder
         $rows = array_map('str_getcsv', file($file));
         $header = array_map(fn($h) => trim($h), array_shift($rows));
 
-        return array_map(function ($row) use ($header) {
-            // pad short rows so array_combine doesn't fail
-            $row = array_pad($row, count($header), null);
+        $rows = array_filter($rows, fn($row) => count($row) > 1 || (count($row) === 1 && trim($row[0]) !== ''));
+
+        return array_values(array_map(function ($row) use ($header) {
+            // pad short rows and truncate long rows so array_combine doesn't fail
+            $row = array_slice(array_pad($row, count($header), null), 0, count($header));
             return array_combine($header, array_map('trim', $row));
-        }, $rows);
+        }, $rows));
     }
 }
