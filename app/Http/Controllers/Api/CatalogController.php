@@ -21,6 +21,29 @@ class CatalogController extends Controller
     }
 
     /**
+     * Single need group with its conditions.
+     */
+    public function needGroup(string $slug)
+    {
+        $group = NeedGroup::with(['conditions:id,need_group_id,name,slug'])
+            ->where('slug', $slug)
+            ->firstOrFail(['id','name','slug','order']);
+
+        return response()->json($group);
+    }
+
+    /**
+     * All products listing.
+     */
+    public function allProducts()
+    {
+        $products = Product::orderBy('name')
+            ->get(['id','name','slug','image_url','form','description']);
+
+        return response()->json($products);
+    }
+
+    /**
      * Search across products/conditions/ingredients.
      * Returns enriched product objects with their conditions and ingredients.
      */

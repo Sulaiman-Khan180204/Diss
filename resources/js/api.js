@@ -8,6 +8,10 @@ async function get(path) {
 
 export const fetchNeedGroups = () => get('/need-groups');
 
+export const fetchNeedGroup = (slug) => get(`/need-groups/${slug}`);
+
+export const fetchProducts = () => get('/products');
+
 export const fetchSearch = (q) => get(`/search?q=${encodeURIComponent(q)}`);
 
 export const fetchProduct = (slug) => get(`/products/${slug}`);

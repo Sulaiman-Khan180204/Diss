@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo.jsx";
 import { fetchNeedGroups } from "../api.js";
@@ -14,21 +14,9 @@ function ChevronDown() {
 export default function NavBar() {
     const [needGroups, setNeedGroups] = useState([]);
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const dropdownRef = useRef(null);
 
     useEffect(() => {
         fetchNeedGroups().then(setNeedGroups).catch(() => {});
-    }, []);
-
-    // Close dropdown on outside click
-    useEffect(() => {
-        function handleClick(e) {
-            if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-                setDropdownOpen(false);
-            }
-        }
-        document.addEventListener("mousedown", handleClick);
-        return () => document.removeEventListener("mousedown", handleClick);
     }, []);
 
     return (
@@ -43,8 +31,12 @@ export default function NavBar() {
                 {/* Right: navigation */}
                 <ul className="flex items-center gap-6 text-green-900 font-medium">
 
-                    {/* Products by Need — mega dropdown */}
-                    <li className="relative" ref={dropdownRef}>
+                    {/* Products by Need — hover mega dropdown */}
+                    <li
+                        className="relative"
+                        onMouseEnter={() => setDropdownOpen(true)}
+                        onMouseLeave={() => setDropdownOpen(false)}
+                    >
                         <button
                             onClick={() => setDropdownOpen((o) => !o)}
                             className="flex items-center gap-1.5 hover:text-green-700 focus:outline-none"
@@ -54,13 +46,17 @@ export default function NavBar() {
                         </button>
 
                         {dropdownOpen && needGroups.length > 0 && (
-                            <div className="absolute right-0 top-full mt-2 w-[600px] max-w-[90vw] bg-white border border-green-100 rounded-xl shadow-xl z-50 p-5">
+                            <div className="absolute right-0 top-full mt-0 w-[600px] max-w-[90vw] bg-white border border-green-100 rounded-xl shadow-xl z-50 p-5">
                                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                                     {needGroups.map((group) => (
                                         <div key={group.slug}>
-                                            <p className="font-semibold text-green-900 text-xs uppercase tracking-wide mb-1">
+                                            <Link
+                                                to={`/need-groups/${group.slug}`}
+                                                className="font-semibold text-green-900 text-xs uppercase tracking-wide mb-1 hover:text-green-600 block"
+                                                onClick={() => setDropdownOpen(false)}
+                                            >
                                                 {group.name}
-                                            </p>
+                                            </Link>
                                             <ul className="space-y-0.5">
                                                 {group.conditions?.map((cond) => (
                                                     <li key={cond.slug}>
@@ -79,6 +75,16 @@ export default function NavBar() {
                                 </div>
                             </div>
                         )}
+                    </li>
+
+                    {/* Products */}
+                    <li>
+                        <Link to="/products" className="hover:text-green-700">Products</Link>
+                    </li>
+
+                    {/* Children */}
+                    <li>
+                        <Link to="/need-groups/children-infants" className="hover:text-green-700">Children</Link>
                     </li>
 
                     {/* About */}
