@@ -1,0 +1,135 @@
+product_slug,compound_name
+vit-d3,Cholecalciferol
+vit-c,Ascorbic Acid
+vit-b-complex,Thiamine Mononitrate
+vit-b-complex,Riboflavin
+vit-b-complex,Nicotinamide
+vit-b-complex,Calcium D-Pantothenate
+vit-b-complex,Pyridoxine HCl
+vit-b-complex,Cyanocobalamin
+vit-b-complex,D-Biotin
+vit-b-complex,Pteroylmonoglutamic Acid
+vit-b12,Cyanocobalamin
+folic-acid,Pteroylmonoglutamic Acid
+vit-a,Retinyl Palmitate
+vit-e,d-alpha-Tocopherol
+vit-k,Phylloquinone
+vit-k2,Menaquinone-7 (MK-7)
+biotin,D-Biotin
+niacin,Nicotinic Acid
+vit-b5,Calcium D-Pantothenate
+riboflavin-b2,Riboflavin
+thiamine-b1,Thiamine Mononitrate
+vit-c-zinc-combo,Ascorbic Acid
+vit-c-zinc-combo,Zinc Gluconate
+multivitamins,Retinyl Palmitate
+multivitamins,Ascorbic Acid
+multivitamins,Cholecalciferol
+multivitamins,d-alpha-Tocopherol
+multivitamins,Pyridoxine HCl
+multivitamins,Cyanocobalamin
+multivitamins,Ferrous Fumarate
+multivitamins,Zinc Gluconate
+magnesium-tablets,Magnesium Oxide
+magnesium-glycinate,Magnesium Bisglycinate
+magnesium-citrate,Magnesium Citrate
+iron-supplements,Ferrous Sulfate
+zinc-supplements,Zinc Gluconate
+calcium-supplements,Calcium Carbonate
+selenium,Selenomethionine
+potassium-supplements,Potassium Citrate
+copper,Copper Gluconate
+chromium,Chromium Picolinate
+iodine,Potassium Iodide
+boron,Boron Citrate
+manganese,Manganese Gluconate
+ashwagandha,Withanolides
+gingko-biloba,Ginkgo Flavone Glycosides
+gingko-biloba,Terpene Lactones
+st-johns-wort,Hypericin
+st-johns-wort,Hyperforin
+cbd-oil,Cannabidiol (CBD)
+l-theanine,L-Theanine
+lions-mane-mushroom,Beta-Glucans
+lions-mane-mushroom,Hericenones
+lions-mane-mushroom,Erinacines
+omega-3-fish-oil,Eicosapentaenoic Acid (EPA)
+omega-3-fish-oil,Docosahexaenoic Acid (DHA)
+triple-omega-3-6-9,Eicosapentaenoic Acid (EPA)
+triple-omega-3-6-9,Docosahexaenoic Acid (DHA)
+triple-omega-3-6-9,Linoleic Acid
+triple-omega-3-6-9,Oleic Acid
+coenzyme-q10,Ubiquinone
+garlic-supplements,Allicin
+krill-oil,Eicosapentaenoic Acid (EPA)
+krill-oil,Docosahexaenoic Acid (DHA)
+krill-oil,Phosphatidylcholine
+resveratrol,Trans-Resveratrol
+algae-omega-3,Docosahexaenoic Acid (DHA)
+beetroot-capsules,Betaine
+hawthorn-berry,Oligomeric Proanthocyanidins
+hawthorn-berry,Vitexin-2-rhamnoside
+whey-protein-powder,Whey Protein Concentrate
+whey-protein-powder,Leucine
+whey-protein-powder,Isoleucine
+whey-protein-powder,Valine
+plant-based-protein,Pea Protein Isolate
+plant-based-protein,Rice Protein Concentrate
+creatine,Creatine Monohydrate
+electrolytes,Sodium Chloride
+electrolytes,Potassium Citrate
+electrolytes,Magnesium Citrate
+amino-acid,Leucine
+amino-acid,Isoleucine
+amino-acid,Valine
+amino-acid,Lysine HCl
+amino-acid,Threonine
+collagen-blends,Hydrolyzed Collagen Peptides (Type I/III)
+beta-alanine,L-Beta-Alanine
+probiotics-prebiotics,Lactobacillus acidophilus
+probiotics-prebiotics,Bifidobacterium longum
+probiotics-prebiotics,Inulin
+apple-cider-vinegar,Acetic Acid
+l-glutamine,L-Glutamine
+aloe-vera-capsules,Acemannan
+slippery-elm,Mucilage Polysaccharides
+skin-hair-and-nails,D-Biotin
+skin-hair-and-nails,Zinc Gluconate
+skin-hair-and-nails,Ascorbic Acid
+skin-hair-and-nails,Orthosilicic Acid
+glucosamine-chondroitin,Glucosamine Sulfate
+glucosamine-chondroitin,Chondroitin Sulfate
+glucosamine-chondroitin,Curcuminoids
+msm,Methylsulfonylmethane
+calcium-d-mag-combo,Calcium Carbonate
+calcium-d-mag-combo,Cholecalciferol
+calcium-d-mag-combo,Magnesium Oxide
+turmeric,Curcuminoids
+devils-claw,Harpagoside
+childrens-multivitamin-gummies,Retinyl Palmitate
+childrens-multivitamin-gummies,Ascorbic Acid
+childrens-multivitamin-gummies,Cholecalciferol
+childrens-multivitamin-gummies,Pyridoxine HCl
+childrens-multivitamin-gummies,D-Biotin
+childrens-multivitamin-gummies,Zinc Gluconate
+baby-multivitamin-drops,Retinyl Palmitate
+baby-multivitamin-drops,Ascorbic Acid
+baby-multivitamin-drops,Cholecalciferol
+baby-multivitamin-drops,Cyanocobalamin
+vitamin-d3-drops,Cholecalciferol
+elderberry-syrup,Anthocyanins
+choline,Choline Bitartrate
+evening-primrose-oil,Gamma-Linolenic Acid (GLA)
+dim,Diindolylmethane (DIM)
+maca-root,Macamides
+maca-root,Macaenes
+saw-palmetto,Beta-Sitosterol
+saw-palmetto,Lauric Acid
+tribulus,Protodioscin
+zma,Zinc Monomethionine
+zma,Magnesium Aspartate
+zma,Pyridoxine HCl
+shilajit,Fulvic Acid
+shilajit,Dibenzo-alpha-pyrones
+fenugreek,4-Hydroxyisoleucine
+fenugreek,Furostanolic Saponins

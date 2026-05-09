@@ -5,21 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>WhatSupp?</title>
-
-    <div id="react-content">
-        function ReactButton() {
-        return (
-    <button class="text-purple-500">A simple React button</button>
-  );
-}
-    </div>
-
-
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 
     @viteReactRefresh
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
 </head>
 <body>
     @yield('content')
+    @stack('scripts')
 </body>
 </html>

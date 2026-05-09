@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WhatSupp</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta name="description" content="Find the right supplement for your wellbeing.">
 
   @viteReactRefresh
