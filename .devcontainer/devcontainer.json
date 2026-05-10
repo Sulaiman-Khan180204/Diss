@@ -1,14 +1,12 @@
-{
-  "name": "PHP & MariaDB",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "app",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "forwardPorts": [8080, 3306, 8081, 5173],
-  "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html && composer install && npm install && npm install -g @anthropic-ai/claude-code",
-  "remoteUser": "root",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
-    }
-  }
-}
+FROM mcr.microsoft.com/devcontainers/php:1-8.2-bookworm
+
+# Remove broken yarn repo and install MariaDB client
+RUN rm -f /etc/apt/sources.list.d/yarn.list \
+    && apt-get update \
+    && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get install -y mariadb-client \
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install php-mysql driver
+RUN docker-php-ext-install mysqli pdo pdo_mysql
