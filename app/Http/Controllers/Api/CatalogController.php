@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\{NeedGroup, Product, Ingredient, Condition};
+use App\Models\{NeedGroup, Product, Ingredient, Condition, Compound};
 use Illuminate\Http\Request;
 
 class CatalogController extends Controller
@@ -21,7 +21,7 @@ class CatalogController extends Controller
     }
 
     /**
-     * Single need group with its conditions.
+     * Single need group with its conditions and all associated products.
      */
     public function needGroup(string $slug)
     {
@@ -29,15 +29,30 @@ class CatalogController extends Controller
             ->where('slug', $slug)
             ->firstOrFail(['id','name','slug','order']);
 
-        return response()->json($group);
+        $conditionIds = $group->conditions->pluck('id');
+
+        $products = Product::whereHas('conditions', fn($q) => $q->whereIn('conditions.id', $conditionIds))
+            ->with(['conditions:id,name,slug'])
+            ->orderBy('name')
+            ->get(['id','name','slug','image_url','form','description']);
+
+        return response()->json([
+            'group'    => $group,
+            'products' => $products,
+        ]);
     }
 
     /**
-     * All products listing.
+     * All products listing — includes ingredients and conditions (with need group) for client-side filtering.
      */
     public function allProducts()
     {
-        $products = Product::orderBy('name')
+        $products = Product::with([
+                'ingredients:id,name',
+                'conditions:id,name,slug,need_group_id',
+                'conditions.needGroup:id,name,slug,order',
+            ])
+            ->orderBy('name')
             ->get(['id','name','slug','image_url','form','description']);
 
         return response()->json($products);
@@ -117,12 +132,69 @@ class CatalogController extends Controller
     {
         $product = Product::with([
                 'conditions:id,name,slug',
-                'ingredients:id,name,short_benefits,evidence_level'
+                'ingredients:id,name,short_benefits,evidence_level',
+                'compounds:id,name,slug,description,mechanism',
             ])
             ->where('slug', $slug)
-            ->firstOrFail();
+            ->firstOrFail(['id','name','slug','form','description','image_url',
+                           'suitable_age','vegan_friendly','pregnancy_safe','children_safe']);
 
         return response()->json($product);
+    }
+
+    /**
+     * Compound Explorer list — all compounds with their category and associated products.
+     */
+    public function compounds()
+    {
+        $compounds = Compound::with(['products:id,name,slug,image_url'])
+            ->orderBy('category')
+            ->orderBy('name')
+            ->get(['id', 'name', 'slug', 'category', 'description', 'ingredient_id']);
+
+        return response()->json($compounds);
+    }
+
+    /**
+     * Compound Explorer detail — mechanism, parent ingredient, and products.
+     */
+    public function compound(string $slug)
+    {
+        $compound = Compound::with([
+                'products:id,name,slug,image_url,form',
+                'ingredient:id,name',
+            ])
+            ->where('slug', $slug)
+            ->firstOrFail(['id', 'name', 'slug', 'category', 'description', 'mechanism', 'ingredient_id']);
+
+        return response()->json($compound);
+    }
+
+    /**
+     * Ingredient Explorer list — all ingredients with their compound count.
+     */
+    public function ingredients()
+    {
+        $ingredients = Ingredient::withCount('compounds')
+            ->orderBy('name')
+            ->get(['id', 'name', 'slug', 'short_benefits', 'evidence_level']);
+
+        return response()->json($ingredients);
+    }
+
+    /**
+     * Ingredient Explorer detail — compounds and products containing this ingredient.
+     */
+    public function ingredient(string $slug)
+    {
+        $ingredient = Ingredient::with([
+                'compounds:id,name,description,mechanism,ingredient_id',
+                'products:id,name,slug,image_url,form',
+            ])
+            ->where('slug', $slug)
+            ->firstOrFail(['id', 'name', 'slug', 'short_benefits', 'evidence_level']);
+
+        return response()->json($ingredient);
     }
 
     /**

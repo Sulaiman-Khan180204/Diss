@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
+import ProductCard from "../components/ProductCard.jsx";
 import { fetchNeedGroup } from "../api.js";
 
 export default function NeedGroupPage() {
     const { slug } = useParams();
-    const [group, setGroup] = useState(null);
+    const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -13,22 +14,26 @@ export default function NeedGroupPage() {
         setLoading(true);
         setError(null);
         fetchNeedGroup(slug)
-            .then(setGroup)
+            .then(setData)
             .catch(() => setError("Category not found."))
             .finally(() => setLoading(false));
     }, [slug]);
+
+    const group = data?.group;
+    const products = data?.products ?? [];
 
     return (
         <div className="min-h-screen w-full bg-green-100 flex flex-col">
             <NavBar />
 
             <main className="flex-1 w-full bg-white rounded-t-3xl mt-6 py-12">
-                <div className="max-w-4xl mx-auto px-4">
+                <div className="max-w-6xl mx-auto px-4">
 
                     {loading && (
-                        <div className="animate-pulse space-y-4">
-                            <div className="h-8 bg-green-50 rounded w-1/3" />
-                            <div className="h-4 bg-green-50 rounded w-2/3" />
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            {Array.from({ length: 8 }).map((_, i) => (
+                                <div key={i} className="bg-green-50 rounded-xl h-52 animate-pulse" />
+                            ))}
                         </div>
                     )}
 
@@ -41,22 +46,39 @@ export default function NeedGroupPage() {
 
                     {group && (
                         <>
-                            <Link to="/" className="text-sm text-green-600 hover:underline">← Back</Link>
+                            <div className="mb-8">
+                                <Link to="/" className="text-sm text-green-600 hover:underline">← Back</Link>
+                                <h1 className="mt-2 text-3xl font-extrabold text-green-900">{group.name}</h1>
 
-                            <h1 className="mt-4 text-3xl font-extrabold text-green-900">{group.name}</h1>
-                            <p className="mt-2 text-green-700">Browse health needs in this category:</p>
+                                {/* Sub-conditions as filter chips */}
+                                {group.conditions?.length > 0 && (
+                                    <div className="mt-3 flex flex-wrap gap-2">
+                                        {group.conditions.map((cond) => (
+                                            <Link
+                                                key={cond.slug}
+                                                to={`/conditions/${cond.slug}`}
+                                                className="text-sm bg-green-100 text-green-800 hover:bg-green-200 px-3 py-1 rounded-full transition"
+                                            >
+                                                {cond.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
 
-                            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {group.conditions?.map((cond) => (
-                                    <Link
-                                        key={cond.slug}
-                                        to={`/conditions/${cond.slug}`}
-                                        className="block bg-green-50 hover:bg-green-100 rounded-xl px-5 py-4 text-green-900 font-medium transition"
-                                    >
-                                        {cond.name}
-                                    </Link>
-                                ))}
+                                <p className="mt-3 text-green-700 text-sm">
+                                    {products.length} product{products.length !== 1 ? "s" : ""} in this category
+                                </p>
                             </div>
+
+                            {products.length === 0 ? (
+                                <p className="text-gray-500">No products found for this category yet.</p>
+                            ) : (
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                                    {products.map((product) => (
+                                        <ProductCard key={product.slug} product={product} />
+                                    ))}
+                                </div>
+                            )}
                         </>
                     )}
                 </div>

@@ -36,6 +36,14 @@ class Product extends Model
     }
 
     /**
+     * Active compounds / extracts in this product.
+     */
+    public function compounds(): BelongsToMany
+    {
+        return $this->belongsToMany(Compound::class, 'product_compound');
+    }
+
+    /**
      * Ingredients contained in this product.
      */
     public function ingredients(): BelongsToMany
