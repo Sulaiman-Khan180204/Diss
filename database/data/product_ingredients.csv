@@ -19,7 +19,24 @@ riboflavin-b2,Vitamin B2 (Riboflavin)
 thiamine-b1,Vitamin B1 (Thiamine)
 vit-c-zinc-combo,Vitamin C
 vit-c-zinc-combo,Zinc
-multivitamins,Vitamins & Minerals (Blend)
+multivitamins,Vitamin A
+multivitamins,Vitamin C
+multivitamins,Vitamin D3
+multivitamins,Vitamin E
+multivitamins,Vitamin B1 (Thiamine)
+multivitamins,Vitamin B2 (Riboflavin)
+multivitamins,Vitamin B3 (Niacin)
+multivitamins,Vitamin B5 (Pantothenic Acid)
+multivitamins,Vitamin B6 (Pyridoxine)
+multivitamins,Vitamin B12
+multivitamins,Folic Acid
+multivitamins,Biotin
+multivitamins,Iron
+multivitamins,Zinc
+multivitamins,Calcium
+multivitamins,Magnesium
+multivitamins,Iodine
+multivitamins,Selenium
 vit-k2,Vitamin K2
 
 magnesium-tablets,Magnesium
@@ -35,10 +52,6 @@ chromium,Chromium
 iodine,Iodine
 boron,Boron
 manganese,Manganese
-electrolyte-tablets,Sodium
-electrolyte-tablets,Potassium
-electrolyte-tablets,Chloride
-electrolyte-tablets,Magnesium
 
 ashwagandha,Ashwagandha
 gingko-biloba,Ginkgo biloba
@@ -63,45 +76,48 @@ whey-protein-powder,Whey Protein
 plant-based-protein,Pea Protein
 plant-based-protein,Rice Protein
 creatine,Creatine Monohydrate
-bcaa-supplements,Leucine
-bcaa-supplements,Isoleucine
-bcaa-supplements,Valine
 electrolytes,Sodium
 electrolytes,Potassium
 electrolytes,Magnesium
-pre-workout-blends,Caffeine
-pre-workout-blends,Beta‑Alanine
-pre-workout-blends,Citrulline Malate
 amino-acid,EAAs (Essential Amino Acids)
 collagen-blends,Collagen (Type I/III)
-meal-replacement-shakes,Vitamins & Minerals (Blend)
 beta-alanine,Beta‑Alanine
 
 probiotics-prebiotics,Probiotic Cultures
 probiotics-prebiotics,Inulin (Prebiotic)
-digestive-enzymes,Enzymes (Amylase/Protease/Lipase)
 apple-cider-vinegar,Acetic Acid (ACV)
 l-glutamine,L‑Glutamine
 aloe-vera-capsules,Aloe Vera
 slippery-elm,Slippery Elm
 
-marine-collagen,Collagen (Type I/III)
-hyaluronic-acid-supps,Hyaluronic Acid
-skin-hair-and-nails,Skin/Hair/Nails Blend
-primrose-oil,Evening Primrose Oil (GLA)
-silica,Silica
+skin-hair-and-nails,Biotin
+skin-hair-and-nails,Zinc
+skin-hair-and-nails,Vitamin C
+skin-hair-and-nails,Silica
 
 glucosamine-chondroitin,Collagen (Type II)
 glucosamine-chondroitin,Turmeric (Curcumin)
 msm,MSM
-calcium-d-mag-combo,Calcium+VitD+Mag Blend
+calcium-d-mag-combo,Calcium
+calcium-d-mag-combo,Vitamin D3
+calcium-d-mag-combo,Magnesium
 turmeric,Turmeric (Curcumin)
-boswellia-cream,Boswellia
-collagen-ii-joint-support,Collagen (Type II)
 devils-claw,Devil’s Claw
 
-childrens-multivitamin-gummies,Vitamins & Minerals (Blend)
-baby-multivitamin-drops,Vitamins & Minerals (Blend)
+childrens-multivitamin-gummies,Vitamin A
+childrens-multivitamin-gummies,Vitamin C
+childrens-multivitamin-gummies,Vitamin D3
+childrens-multivitamin-gummies,Vitamin E
+childrens-multivitamin-gummies,Vitamin B6 (Pyridoxine)
+childrens-multivitamin-gummies,Vitamin B12
+childrens-multivitamin-gummies,Folic Acid
+childrens-multivitamin-gummies,Biotin
+childrens-multivitamin-gummies,Zinc
+childrens-multivitamin-gummies,Iodine
+baby-multivitamin-drops,Vitamin A
+baby-multivitamin-drops,Vitamin C
+baby-multivitamin-drops,Vitamin D3
+baby-multivitamin-drops,Vitamin B12
 vitamin-d3-drops,Vitamin D3
 elderberry-syrup,Elderberry
 choline,Choline
@@ -109,16 +125,11 @@ choline,Choline
 evening-primrose-oil,Evening Primrose Oil (GLA)
 dim,DIM
 maca-root,Maca
-menopause-support-blends,Resveratrol
-menopause-support-blends,Evening Primrose Oil (GLA)
-prenatal-vitamins,Vitamins & Minerals (Blend)
-myo-inositol,Myo‑Inositol
 
 saw-palmetto,Saw Palmetto
 tribulus,Tribulus
-zma,ZMA Blend
-testosterone-support-blends,D‑Aspartic Acid
-testosterone-support-blends,Tribulus
-testosterone-support-blends,Zinc
+zma,Zinc
+zma,Magnesium
+zma,Vitamin B6 (Pyridoxine)
 shilajit,Shilajit
 fenugreek,Fenugreek

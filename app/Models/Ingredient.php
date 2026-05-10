@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use App\Models\Compound;
 
 class Ingredient extends Model
 {
@@ -13,9 +14,18 @@ class Ingredient extends Model
 
     protected $fillable = [
         'name',
+        'slug',
         'short_benefits',   // brief description shown in popups
         'evidence_level',   // A / B / C
     ];
+
+    /**
+     * Compound extracts that belong to this ingredient.
+     */
+    public function compounds(): HasMany
+    {
+        return $this->hasMany(Compound::class);
+    }
 
     /**
      * Products that include this ingredient.

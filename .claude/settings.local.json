@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push:*)",
+      "Bash(php artisan:*)",
+      "WebFetch(domain:www.nhs.uk)",
+      "WebFetch(domain:www.food.gov.uk)",
+      "WebFetch(domain:www.mhra.gov.uk)",
+      "WebFetch(domain:efsa.europa.eu)",
+      "WebFetch(domain:www.gov.uk)",
+      "Bash(python3 -c \" import json with open\\('/root/.claude/projects/-workspaces-laravel-starter/e05480c6-215b-449b-aa26-5b49437a1a0d/tool-results/toolu_01A4fCB6Azuk6aFNcMujqC9x.json'\\) as f: data = json.load\\(f\\) print\\(data[0]['text']\\) \")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d[0]['text']\\)\")",
+      "Bash(node -e \"const d=require\\('./toolu_01A4fCB6Azuk6aFNcMujqC9x.json'\\); process.stdout.write\\(d[0].text\\);\")",
+      "Bash(node -e \"const d=require\\('/root/.claude/projects/-workspaces-laravel-starter/e05480c6-215b-449b-aa26-5b49437a1a0d/tool-results/toolu_01A4fCB6Azuk6aFNcMujqC9x.json'\\); process.stdout.write\\(d[0].text\\);\")",
+      "Read(//tmp/**)",
+      "Bash(awk NR>=200 && NR<=600:*)",
+      "Bash(curl:*)",
+      "Bash(npm run:*)",
+      "Bash(awk -F',' '{print $1\",\"$2}' /workspaces/laravel-starter/database/data/products.csv and explain to me what changes you made)",
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "Bash(python3 *)",
+      "Bash(composer require *)",
+      "Bash(awk '{print $7}')",
+      "Bash(pkill -f \"vite\")",
+      "Bash(pkill -f \"npm run dev\")",
+      "Bash(awk -F, '{print $NF}')",
+      "Bash(awk -F, '{print $1, $NF}')",
+      "Bash(convert --version)",
+      "Bash(php -r ' *)",
+      "Bash(sed -i '/^Inorganic Nitrate,/d' /workspaces/laravel-starter/database/data/compounds.csv)",
+      "Bash(sed -i '/,Inorganic Nitrate$/d' /workspaces/laravel-starter/database/data/product_compounds.csv)",
+      "Bash(apt-get install *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(pandoc --version)",
+      "Bash(marked *)",
+      "Bash(awk -F',' '{print $1}')",
+      "Bash(identify *)",
+      "Bash(awk -F',' 'NR==1{print} NF>0{print $1\",\"$2}' /workspaces/laravel-starter/database/data/products.csv)"
+    ]
+  }
+}
